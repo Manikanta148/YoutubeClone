@@ -1,0 +1,66 @@
+.video-grid{
+    padding-left: 85px;
+    padding-top: 85px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+.thumbnail{
+    position: relative;
+    margin-bottom: 8px;
+}
+.thumbnail-image img{
+    width: 100%;
+    border-radius:15px;
+}
+.time{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 400;
+    background-color:rgba(0,0,0,0.6);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 4px;
+    z-index: 1;
+}
+.channel-image img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.video-info{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 10px;
+}
+.about{
+    font-weight: bold;
+    font-size: 13px;
+}
+.channel-info,.views{
+    font-size: 15px;
+    color: rgb(95,95,95);
+    margin-top: 8px;
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1101px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  @media (max-width: 499px) {
+    .video-grid {
+      grid-template-columns: 1fr;
+    }
+  }
